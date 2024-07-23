@@ -1,0 +1,39 @@
+/* Centrar y ajustar el contenedor */
+.contenedor {
+  display: flex;
+  flex-direction: column; /* Alinea los componentes en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 90%; /* Ocupa 3/4 del ancho de la pantalla */
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  gap: 20px; /* Añade espacio entre los componentes si es necesario */
+  padding: 20px; /* Espacio opcional dentro del contenedor */
+  
+ 
+
+}
+
+  app-add-task, app-list-tasks {
+
+    width: 80%;
+  }
+
+  @media (max-width: 825px) {
+ 
+
+    app-add-task, app-list-tasks  {
+      width: 95%;
+    }}
+  
+  
+    @media (max-width: 600px) {
+      .contenedor {
+        flex-direction: column;
+  
+      }
+  
+      app-list-tasks {
+        width: 100%;
+      }
+
+
+} 

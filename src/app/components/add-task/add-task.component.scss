@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  margin-top: 75px;
+  @media (max-width:600px){
+    margin-top: 3rem;
+  }
+ }
+ 
+ .add-task{
+  display: flex;
+  margin-top: 40px; 
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  &__input--descripcion,
+  &__input--estado,
+  &__input--fecha {
+    width: 250px;
+    
+  }
+ 
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    &__boton-add {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+}

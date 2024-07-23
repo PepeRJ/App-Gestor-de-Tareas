@@ -1,0 +1,68 @@
+
+<h1>GESTOR DE TAREAS</h1>
+<div class="add-task">
+  <!-- INPUT DESCRIPCION DE LA TAREA -->
+  <mat-form-field class=" add-task__input--descripcion">
+    <mat-label >Añade una tarea</mat-label>
+    <input  matInput [(ngModel)]="descripcion" placeholder="Ingrese la descripción de la tarea" required>
+    @if(descripcion){
+    <button  matSuffix mat-icon-button aria-label="Clear" (click)="descripcion=''">
+      <mat-icon>close</mat-icon>
+    </button>}
+  </mat-form-field>
+<!-- INPUT SELECT ESTADO DE LA TAREA -->
+  <mat-form-field class="add-task__input--estado">
+    <mat-label>Estado</mat-label>
+    <mat-select [(ngModel)]="estado">
+      <mat-option value="Por empezar">Por empezar</mat-option>
+      <mat-option value="En proceso">En proceso</mat-option>
+      <mat-option value="Terminada">Terminada</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <!-- INPUT ELECCION DE LA FECHA -->
+  <mat-form-field class="add-task__input--fecha">
+    <mat-label>Terminar el día</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="fecha" placeholder="Seleccione una fecha" [min]="currentDate" required>
+    <mat-datepicker-toggle matSuffix [for]="picker">{{fecha}}</mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<!-- BOTON ICONO AÑADIR -->
+
+  <button class="add-task__boton-add" mat-button (click)="addTask()">Añadir</button>
+  </div>
+
+
+  <!-- <h1>LISTA DE TAREAS</h1>
+<div class="contenedor-add">
+
+  <mat-form-field class="input-descripcion">
+    <mat-label >Añade una tarea</mat-label>
+    <input  matInput [(ngModel)]="descripcion" placeholder="Ingrese la descripción de la tarea" required>
+    @if(descripcion){
+    <button  matSuffix mat-icon-button aria-label="Clear" (click)="descripcion=''">
+      <mat-icon>close</mat-icon>
+    </button>}
+  </mat-form-field>
+
+  <mat-form-field class="input-estado">
+    <mat-label>Estado</mat-label>
+    <mat-select [(ngModel)]="estado">
+      <mat-option value="Por empezar">Por empezar</mat-option>
+      <mat-option value="En proceso">En proceso</mat-option>
+      <mat-option value="Terminada">Terminada</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+
+  <mat-form-field class="input-fecha">
+    <mat-label>Terminar el día</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="fecha" placeholder="Seleccione una fecha" [min]="currentDate" required>
+    <mat-datepicker-toggle matSuffix [for]="picker">{{fecha}}</mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+
+
+  <button class="boton-add" mat-button (click)="addTask()">Añadir</button> -->

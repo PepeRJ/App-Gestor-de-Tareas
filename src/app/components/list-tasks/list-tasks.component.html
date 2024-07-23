@@ -1,0 +1,47 @@
+
+ <div class="lista">
+  @for (task of paginatedTasks(); track $index) {
+  <mat-list-item>
+    <div class="lista__fila">
+      <div class="lista__fecha-descripcion">
+
+        <div class="lista__fecha" [ngStyle]="{'text-decoration': task.estado === 'Terminada' ? 'line-through' : 'none' }">
+          <span matListItemTitle>{{ task.fecha | fecha }}</span>
+        </div>
+        <div class="lista__descripcion" [ngStyle]="{ 'text-decoration': task.estado === 'Terminada' ? 'line-through' : 'none' }">
+          <span matListItemLine>{{ task.descripcion }}</span>
+        </div>
+      </div>
+      
+
+      <div class="lista__estado-boton">
+
+        <mat-form-field class="lista__estado-fila">
+          <mat-label>Estado</mat-label>
+          <mat-select [(value)]="task.estado">
+            <mat-option value="Por empezar">Por empezar</mat-option>
+            <mat-option value="En proceso">En proceso</mat-option>
+            <mat-option value="Terminada">Terminada</mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+      
+        <div>
+          <button class="lista__boton" mat-button (click)="eliminarTarea(task)" color="warn">
+            Eliminar
+          </button>
+        </div>
+      </div>
+    </div>
+  </mat-list-item>}
+
+ 
+   <div class="paginator">
+  <mat-paginator [length]="tasks().length" 
+                 [pageSize]="pageSize" 
+                 [pageSizeOptions]="[4, 10, 25, 100]"
+                 (page)="handlePageEvent($event)"
+                 aria-label="Select page">
+  </mat-paginator>
+</div>
+</div> 
