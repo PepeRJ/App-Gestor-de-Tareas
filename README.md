@@ -1,28 +1,52 @@
-# ListTasks
+# Gestor de Tareas 📝
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+**Descripción:**
 
-## Development server
+Esta aplicación fue desarrollada como una Single Page Application (SPA) con Angular18, ofreciendo así una experiencia de usuario fluida y rápida al evitar recargas completas de página. Utilizamos Angular Material para lograr un diseño moderno y atractivo, y aprovechamos los pipes de Angular para filtrar eficazmente los resultados de búsqueda.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Diseñada para optimizar la organización diaria, esta aplicación permite a los usuarios crear, seguir y completar tareas con facilidad. El objetivo principal es mejorar la productividad mediante una gestión visual y eficiente de las actividades pendientes.
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Creación y seguimiento de tareas.
+- Funcionalidad para marcar tareas como completadas.
+- Diseño moderno y atractivo utilizando Angular Material.
+- Filtros para búsqueda y gestión de tareas gracias a los pipes de Angular.
 
-## Build
+## Prueba la Aplicación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Puedes probar la aplicación en el siguiente enlace: [Gestor de Tareas](https://iridescent-nasturtium-c087d8.netlify.app/)
 
-## Running unit tests
+## Requisitos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js
+- Angular CLI
 
-## Running end-to-end tests
+## Instalación
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clona este repositorio:**
 
-## Further help
+    ```bash
+    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+    cd nombre-del-repositorio
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# App-Gestor-de-Tareas
+2. **Instala las dependencias:**
+
+    ```bash
+    npm install
+    ```
+
+## Uso
+
+1. Ejecuta la aplicación Angular:
+
+    ```bash
+    ng serve -o
+    ```
+
+   Esto abrirá la aplicación en `http://localhost:4200/`.
+
+## Contacto
+
+Para más información o dudas, puedes contactarme en [peperj7@gmail.com](mailto:peperj7@gmail.com).
