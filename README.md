@@ -24,14 +24,8 @@ Puedes probar la aplicación en el siguiente enlace: [Gestor de Tareas](https://
 
 ## Instalación
 
-1. **Clona este repositorio:**
 
-    ```bash
-    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
-    cd nombre-del-repositorio
-    ```
-
-2. **Instala las dependencias:**
+1. **Instala las dependencias:**
 
     ```bash
     npm install
